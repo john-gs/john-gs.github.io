@@ -1,0 +1,32 @@
+{
+    "version": 3,
+    "sources": [
+        "ssg:https://ga.jspm.io/npm:react@18.1.0/jsx-runtime.js",
+        "ssg:https://framerusercontent.com/modules/eqerddp4BarlBReG8wLo/gALmAuLPYXtSF1I0yYcj/fVxnimdqP.js"
+    ],
+    "sourcesContent": [
+        "import*as r from\"react\";var e=\"default\"in r?r.default:r;var t={};var o=e,a=Symbol.for(\"react.element\"),f=Symbol.for(\"react.fragment\"),n=Object.prototype.hasOwnProperty,s=o.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,_={key:!0,ref:!0,__self:!0,__source:!0};function q(r,e,t){var o,f={},l=null,p=null;void 0!==t&&(l=\"\"+t);void 0!==e.key&&(l=\"\"+e.key);void 0!==e.ref&&(p=e.ref);for(o in e)n.call(e,o)&&!_.hasOwnProperty(o)&&(f[o]=e[o]);if(r&&r.defaultProps)for(o in e=r.defaultProps,e)void 0===f[o]&&(f[o]=e[o]);return{$$typeof:a,type:r,key:l,ref:p,props:f,_owner:s.current}}t.Fragment=f;t.jsx=q;t.jsxs=q;const l=t.Fragment,p=t.jsx,u=t.jsxs;export{l as Fragment,t as default,p as jsx,u as jsxs};\n\n//# sourceMappingURL=jsx-runtime.js.map",
+        "import { fontStore } from \"framer\";\nfontStore.loadWebFontsFromSelectors([\"GF;Inter-regular\"]);\nexport const fonts = [{\n  family: \"Inter\",\n  moduleAsset: {\n    localModuleIdentifier: \"local-module:css/fVxnimdqP:default\",\n    url: \"https://fonts.gstatic.com/s/inter/v12/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfMZhrib2Bg-4.ttf\"\n  },\n  style: \"normal\",\n  url: \"https://fonts.gstatic.com/s/inter/v12/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfMZhrib2Bg-4.ttf\",\n  weight: \"400\"\n}];\nexport const css = ['.framer-BA6vY .framer-styles-preset-1wml6uu:not(.rich-text-wrapper), .framer-BA6vY .framer-styles-preset-1wml6uu.rich-text-wrapper h2, .framer-BA6vY .framer-styles-preset-1wml6uu.rich-text-wrapper [data-preset-tag=\"h2\"] { --framer-font-family: \"Inter\", \"Inter Placeholder\", sans-serif; --framer-font-size: 16px; --framer-font-style: normal; --framer-font-weight: 400; --framer-letter-spacing: 0px; --framer-line-height: 24px; --framer-paragraph-spacing: 40px; --framer-text-alignment: start; --framer-text-color: var(--token-55eb047e-6490-4b7d-a079-18fd39e39048, #525252); --framer-text-decoration: none; --framer-text-transform: none; }'];\nexport const className = \"framer-BA6vY\";\nexport const __FramerMetadata__ = {\n  \"exports\": {\n    \"css\": {\n      \"type\": \"variable\",\n      \"annotations\": {\n        \"framerContractVersion\": \"1\"\n      }\n    },\n    \"className\": {\n      \"type\": \"variable\",\n      \"annotations\": {\n        \"framerContractVersion\": \"1\"\n      }\n    },\n    \"fonts\": {\n      \"type\": \"variable\",\n      \"annotations\": {\n        \"framerContractVersion\": \"1\"\n      }\n    },\n    \"__FramerMetadata__\": {\n      \"type\": \"variable\"\n    }\n  }\n};"
+    ],
+    "mappings": "wDAAwB,IAAIA,EAAE,YAAYC,EAAID,EAAQC,EAAMC,EAAE,CAAC,EAAMC,EAAEH,EAAEI,EAAE,OAAO,IAAI,eAAe,EAAEC,EAAE,OAAO,IAAI,gBAAgB,EAAEC,EAAE,OAAO,UAAU,eAAeC,EAAEJ,EAAE,mDAAmD,kBAAkBK,EAAE,CAAC,IAAI,GAAG,IAAI,GAAG,OAAO,GAAG,SAAS,EAAE,EAAE,SAASC,EAAEC,EAAE,EAAER,EAAE,CAAC,IAAIC,EAAEE,EAAE,CAAC,EAAEM,EAAE,KAAKC,EAAE,KAAcV,IAAT,SAAaS,EAAE,GAAGT,GAAY,EAAE,MAAX,SAAiBS,EAAE,GAAG,EAAE,KAAc,EAAE,MAAX,SAAiBC,EAAE,EAAE,KAAK,IAAIT,KAAK,EAAEG,EAAE,KAAK,EAAEH,CAAC,GAAG,CAACK,EAAE,eAAeL,CAAC,IAAIE,EAAEF,CAAC,EAAE,EAAEA,CAAC,GAAG,GAAGO,GAAGA,EAAE,aAAa,IAAIP,KAAK,EAAEO,EAAE,aAAa,EAAWL,EAAEF,CAAC,IAAZ,SAAgBE,EAAEF,CAAC,EAAE,EAAEA,CAAC,GAAG,MAAM,CAAC,SAASC,EAAE,KAAKM,EAAE,IAAIC,EAAE,IAAIC,EAAE,MAAMP,EAAE,OAAOE,EAAE,OAAO,CAAC,CAACL,EAAE,SAASG,EAAEH,EAAE,IAAIO,EAAEP,EAAE,KAAKO,EAAE,IAAME,EAAET,EAAE,SAASU,EAAEV,EAAE,IAAIW,EAAEX,EAAE,KCClpBY,EAAU,0BAA0B,CAAC,kBAAkB,CAAC,EACjD,IAAMC,GAAQ,CAAC,CACpB,OAAQ,QACR,YAAa,CACX,sBAAuB,qCACvB,IAAK,uGACP,EACA,MAAO,SACP,IAAK,wGACL,OAAQ,KACV,CAAC,EACYC,GAAM,CAAC,+nBAA+nB,EACtoBC,GAAY",
+    "names": [
+        "e",
+        "npm_react_18_1_exports",
+        "t",
+        "o",
+        "a",
+        "f",
+        "n",
+        "s",
+        "_",
+        "q",
+        "r",
+        "l",
+        "p",
+        "u",
+        "fontStore",
+        "fonts",
+        "css",
+        "className"
+    ]
+}

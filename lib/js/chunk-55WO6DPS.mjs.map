@@ -1,0 +1,16 @@
+{
+    "version": 3,
+    "sources": [
+        "ssg:https://framerusercontent.com/modules/ZgvAt0HCxJGBjc4JRkLj/obksnbXk5SDm7faEWOtn/augiA20Il.js"
+    ],
+    "sourcesContent": [
+        "export default function e(e, a) {\n  return {\n    bodyClassName: \"framer-body-augiA20Il\",\n    breakpoints: [{\n      hash: \"72rtr7\",\n      mediaQuery: \"(min-width: 1200px)\"\n    }, {\n      hash: \"lnjp37\",\n      mediaQuery: \"(min-width: 810px) and (max-width: 1199px)\"\n    }, {\n      hash: \"ofrhyf\",\n      mediaQuery: \"(max-width: 809px)\"\n    }],\n    description: \"Orman Clark is a product designer, digital artist, and Co-Founder of Make Lemonade — a collective committed to empowering fellow creatives on the road to financial freedom.\",\n    elements: {},\n    title: \"Orman Clark — Designer\",\n    viewport: \"width=device-width\"\n  };\n}\nexport const metadataVersion = 1;\nexport const __FramerMetadata__ = {\n  \"exports\": {\n    \"default\": {\n      \"type\": \"function\",\n      \"annotations\": {\n        \"framerContractVersion\": \"1\"\n      }\n    },\n    \"metadataVersion\": {\n      \"type\": \"variable\",\n      \"annotations\": {\n        \"framerContractVersion\": \"1\"\n      }\n    },\n    \"__FramerMetadata__\": {\n      \"type\": \"variable\"\n    }\n  }\n};"
+    ],
+    "mappings": "AAAe,SAAR,EAAmBA,EAAGC,EAAG,CAC9B,MAAO,CACL,cAAe,wBACf,YAAa,CAAC,CACZ,KAAM,SACN,WAAY,qBACd,EAAG,CACD,KAAM,SACN,WAAY,4CACd,EAAG,CACD,KAAM,SACN,WAAY,oBACd,CAAC,EACD,YAAa,oLACb,SAAU,CAAC,EACX,MAAO,8BACP,SAAU,oBACZ,CACF,CACO,IAAMC,EAAkB,EAClBC,EAAqB,CAChC,QAAW,CACT,QAAW,CACT,KAAQ,WACR,YAAe,CACb,sBAAyB,GAC3B,CACF,EACA,gBAAmB,CACjB,KAAQ,WACR,YAAe,CACb,sBAAyB,GAC3B,CACF,EACA,mBAAsB,CACpB,KAAQ,UACV,CACF,CACF",
+    "names": [
+        "e",
+        "a",
+        "metadataVersion",
+        "__FramerMetadata__"
+    ]
+}

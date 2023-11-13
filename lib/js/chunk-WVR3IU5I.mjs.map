@@ -1,0 +1,18 @@
+{
+    "version": 3,
+    "sources": [
+        "ssg:https://ga.jspm.io/npm:react-dom@18.1.0/client.js"
+    ],
+    "sourcesContent": [
+        "import*as t from\"react-dom\";var o=\"default\"in t?t.default:t;var a={};var e=o;a.createRoot=e.createRoot;a.hydrateRoot=e.hydrateRoot;const r=a.createRoot,d=a.hydrateRoot;export{r as createRoot,a as default,d as hydrateRoot};\n\n//# sourceMappingURL=client.js.map"
+    ],
+    "mappings": "gDAA4B,IAAIA,EAAE,YAAYC,EAAIC,EAAQD,EAAME,EAAE,CAAC,EAAM,EAAEH,EAAEG,EAAE,WAAW,EAAE,WAAWA,EAAE,YAAY,EAAE,YAAY,IAAMC,EAAED,EAAE,WAAWE,EAAEF,EAAE",
+    "names": [
+        "o",
+        "npm_react_dom_18_1_exports",
+        "Ba",
+        "a",
+        "r",
+        "d"
+    ]
+}
