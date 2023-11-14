@@ -69,9 +69,9 @@
             if (xhr.status === 200) {
               let json = JSON.parse(xhr.responseText);
               document.getElementById("temp_f").innerHTML =
-                json.main.temp_f.toFixed(0) + " F";
+                json.current.temp_f.toFixed(0) + " F";
               document.getElementById("weather-description").innerHTML =
-                json.weather[0].description;
+                json.current.condition.text;
             } else {
               console.log("error msg: " + xhr.status);
             }
