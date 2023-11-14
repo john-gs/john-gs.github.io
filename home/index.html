@@ -68,7 +68,7 @@
           if (xhr.readyState === 4) {
             if (xhr.status === 200) {
               let json = JSON.parse(xhr.responseText);
-              document.getElementById("temp_f").innerHTML =
+              document.getElementById("temp").innerHTML =
                 json.current.temp_f.toFixed(0) + " F";
               document.getElementById("weather-description").innerHTML =
                 json.current.condition.text;
