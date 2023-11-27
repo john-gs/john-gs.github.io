@@ -62,16 +62,13 @@
         // Request to open weather map
         xhr.open(
           "GET",
-          "https://api.weatherapi.com/v1/current.json?key=f9c2a04962da4bb889525930231411&q=Rochester, NY&aqi=no"
+          "https://wttr.in/Rochester,NY?format=4"
         );
         xhr.onload = () => {
           if (xhr.readyState === 4) {
             if (xhr.status === 200) {
-              let json = JSON.parse(xhr.responseText);
               document.getElementById("temp").innerHTML =
-                json.current.temp_f.toFixed(0) + " F";
-              document.getElementById("weather-description").innerHTML =
-                json.current.condition.text;
+                xhr.responseText;
             } else {
               console.log("error msg: " + xhr.status);
             }
