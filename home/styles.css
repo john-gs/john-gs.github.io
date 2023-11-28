@@ -6,6 +6,7 @@
   --secondaryFg: #b3b3b3;
   --containerBg: #272727;
   --searchBg: var(--containerBg);
+  --rssFeedBg: var(--containerBg); /* Added for RSS feed */
   --scrollbarColor: #3f3f3f;
   --fontFamily: 'Roboto Mono', monospace;
 }
@@ -69,6 +70,7 @@ body {
   color: var(--fg);
   text-align: center;
 }
+
 .inline {
   display: inline-block;
 }
@@ -81,70 +83,30 @@ body {
   margin: 1em 0em;
 }
 
-@media only screen and (max-width: 960px) {
-  .container {
-    height: auto;
-  }
-  #clock {
-    margin-top: 1em;
-  }
-  .container > #bookmark-container {
-    flex-direction: column;
-    width: 60%;
-  }
-  #bookmark-container > .bookmark-set {
-    width: auto;
-    margin: 1em 0em;
-  }
-}
-
-.bookmark-set {
+.rss-feed-container {
   padding: 1em;
-  background-color: var(--containerBg);
+  background-color: var(--rssFeedBg); /* Added for RSS feed */
   border-radius: 3px;
   font-family: var(--fontFamily);
-  font-size: 0.85rem;
-  width: 25%;
-  height: 12em;
-  margin: 0em 0.5em;
-  box-sizing: border-box;
+  margin-top: 1em; /* Added spacing */
+  width: 50%;
 }
 
-.bookmark-inner-container {
-  overflow-y: scroll;
-  height: 80%;
-  vertical-align: top;
-  padding-right: 6px;
-  box-sizing: border-box;
-
-  scrollbar-width: thin;
-  scrollbar-color: var(--scrollbarColor) #ffffff00;
-}
-
-.bookmark-inner-container::-webkit-scrollbar {
-  width: 6px;
-}
-.bookmark-inner-container::-webkit-scrollbar-track {
-  background: #ffffff00;
-}
-.bookmark-inner-container::-webkit-scrollbar-thumb {
-  background-color: var(--scrollbarColor);
-  border-radius: 6px;
-  border: 3px solid #ffffff00;
-}
-
-.bookmark-title {
+.rss-feed-title {
   font-size: 1.1rem;
   font-weight: 600;
   color: var(--fg);
-  margin: 0em 0em 0.35em 0em;
+  margin-bottom: 0.5em;
 }
-.bookmark {
+
+.rss-feed-content {
+  font-size: 0.85rem;
+  color: var(--fg);
+  line-height: 1.5em;
+  margin-top: 0.5em;
+}
+
+.rss-feed-content a {
   text-decoration: none;
   color: var(--secondaryFg);
-  display: block;
-  margin: 0.5em 0em;
-}
-.bookmark:hover {
-  color: var(--fg);
-}
+  
