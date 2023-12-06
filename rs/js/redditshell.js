@@ -1,6 +1,6 @@
 $(function() {
   var token = false;
-  var auth_user = "guest";
+  var auth_user = "user";
   var posts = [];
   var comments = [];
   var subreddits = [];
@@ -262,7 +262,7 @@ $(function() {
         }
         autocomplete = autocomplete.reduce(function(a,b){if(a.indexOf(b)<0)a.push(b);return a;},[]);
         ls_state = command.join(" ");
-        term.set_prompt(auth_user+'@reddit:~$ ');
+        term.set_prompt(auth_user+'@johnle.org:~$ ');
         term.resume();
       });
       clearTimeout(poll);
@@ -329,7 +329,7 @@ $(function() {
           term.echo(next_line, {raw:true});
         }
         autocomplete = autocomplete.reduce(function(a,b){if(a.indexOf(b)<0)a.push(b);return a;},[]);
-        term.set_prompt(auth_user+'@reddit:~$ ');
+        term.set_prompt(auth_user+'@johnle.org:~$ ');
         term.resume();
         ls_state = command.join(" ");
       });
@@ -397,7 +397,7 @@ $(function() {
           term.echo(next_line, {raw:true});
         }
         autocomplete = autocomplete.reduce(function(a,b){if(a.indexOf(b)<0)a.push(b);return a;},[]);
-        term.set_prompt(auth_user+'@reddit:~$ ');
+        term.set_prompt(auth_user+'@johnle.org:~$ ');
         term.resume();
         ls_state = command.join(" ");
       });
@@ -448,7 +448,7 @@ $(function() {
           term.echo(next_line, {raw:true});
         }
         autocomplete = autocomplete.reduce(function(a,b){if(a.indexOf(b)<0)a.push(b);return a;},[]);
-        term.set_prompt(auth_user+'@reddit:~/subreddits$ ');
+        term.set_prompt(auth_user+'@johnle.org:~/subreddits$ ');
         term.resume();
         ls_state = command.join(" ");
       });
@@ -495,7 +495,7 @@ $(function() {
           term.echo(next_line, {raw:true});
         }
         autocomplete = autocomplete.reduce(function(a,b){if(a.indexOf(b)<0)a.push(b);return a;},[]);
-        term.set_prompt(auth_user+'@reddit:~/subreddits$ ');
+        term.set_prompt(auth_user+'@johnle.org:~/subreddits$ ');
         term.resume();
         ls_state = command.join(" ");
       });
@@ -542,7 +542,7 @@ $(function() {
           term.echo(next_line, {raw:true});
         }
         autocomplete = autocomplete.reduce(function(a,b){if(a.indexOf(b)<0)a.push(b);return a;},[]);
-        term.set_prompt(auth_user+'@reddit:~/subreddits$ ');
+        term.set_prompt(auth_user+'@johnle.org:~/subreddits$ ');
         term.resume();
         ls_state = command.join(" ");
       });
@@ -671,7 +671,7 @@ $(function() {
         cmd_state.push(command);
         cs = cs + 1;
         ls_state = command.join(" ");
-        term.set_prompt(auth_user+'@reddit:~/r/'+subreddit+'$ ');
+        term.set_prompt(auth_user+'@johnle.org:~/r/'+subreddit+'$ ');
         term.resume();
       });
       clearTimeout(poll);
@@ -738,7 +738,7 @@ $(function() {
         }
         autocomplete = autocomplete.reduce(function(a,b){if(a.indexOf(b)<0)a.push(b);return a;},[]);
         ls_state = command.join(" ");
-        term.set_prompt(auth_user+'@reddit:~/r/'+subreddit+'$ ');
+        term.set_prompt(auth_user+'@johnle.org:~/r/'+subreddit+'$ ');
         term.resume();
       });
       clearTimeout(poll);
@@ -807,7 +807,7 @@ $(function() {
         cmd_state.push(cmd);
         cs = cs + 1;
         ls_state = command.join(" ");
-        term.set_prompt(auth_user+'@reddit:~/r/'+subreddit+'$ ');
+        term.set_prompt(auth_user+'@johnle.org:~/r/'+subreddit+'$ ');
         term.resume();
       });
       clearTimeout(poll);
@@ -1016,7 +1016,7 @@ $(function() {
         cmd_state.push(command);
         cs = cs + 1;
         ls_state = command.join(" ");
-        term.set_prompt(auth_user+'@reddit:~'+pwd+'$ ');
+        term.set_prompt(auth_user+'@johnle.org:~'+pwd+'$ ');
         term.resume();
       });
       clearTimeout(poll);
@@ -1087,7 +1087,7 @@ $(function() {
         }
         autocomplete = autocomplete.reduce(function(a,b){if(a.indexOf(b)<0)a.push(b);return a;},[]);
         ls_state = command.join(" ");
-        term.set_prompt(auth_user+'@reddit:~'+pwd+'$ ');
+        term.set_prompt(auth_user+'@johnle.org:~'+pwd+'$ ');
         term.resume();
       });
       clearTimeout(poll);
@@ -1229,7 +1229,7 @@ $(function() {
         cmd_state.push(command);
         cs = cs + 1;
         ls_state = command.join(" ");
-        term.set_prompt(auth_user+'@reddit:~'+pwd+'$ ');
+        term.set_prompt(auth_user+'@johnle.org:~'+pwd+'$ ');
         term.resume();
       });
       clearTimeout(poll);
@@ -1319,7 +1319,7 @@ $(function() {
         ls_state_array = ls_state.split(' ');
         cmd_state.push(ls_state_array);
         cs = cs + 1;
-        term.set_prompt(auth_user+'@reddit:~/search$ ');
+        term.set_prompt(auth_user+'@johnle.org:~/search$ ');
         term.resume();
       });
       clearTimeout(poll);
@@ -1387,7 +1387,7 @@ $(function() {
           term.echo(next_line, {raw:true});
         }
         autocomplete = autocomplete.reduce(function(a,b){if(a.indexOf(b)<0)a.push(b);return a;},[]);
-        term.set_prompt(auth_user+'@reddit:~/search$ ');
+        term.set_prompt(auth_user+'@johnle.org:~/search$ ');
         term.resume();
       });
       clearTimeout(poll);
@@ -1456,7 +1456,7 @@ $(function() {
         }
         autocomplete = autocomplete.reduce(function(a,b){if(a.indexOf(b)<0)a.push(b);return a;},[]);
         ls_state = command.join(" ");
-        term.set_prompt(auth_user+'@reddit:~/search$ ');
+        term.set_prompt(auth_user+'@johnle.org:~/search$ ');
         term.resume();
       });
       clearTimeout(poll);
@@ -1605,7 +1605,7 @@ $(function() {
         cmd_state.push(command);
         cs = cs + 1;
         ls_state = command.join(" ");
-        term.set_prompt(auth_user+'@reddit:~/user/'+author+'$ ');
+        term.set_prompt(auth_user+'@johnle.org:~/user/'+author+'$ ');
         term.resume();
       });
       clearTimeout(poll);
@@ -1744,7 +1744,7 @@ $(function() {
         }
         autocomplete = autocomplete.reduce(function(a,b){if(a.indexOf(b)<0)a.push(b);return a;},[]);
         ls_state = command.join(" ");
-        term.set_prompt(auth_user+'@reddit:~/user/'+author+'$ ');
+        term.set_prompt(auth_user+'@johnle.org:~/user/'+author+'$ ');
         term.resume();
       });
       clearTimeout(poll);
@@ -1883,7 +1883,7 @@ $(function() {
         }
         autocomplete = autocomplete.reduce(function(a,b){if(a.indexOf(b)<0)a.push(b);return a;},[]);
         ls_state = command.join(" ");
-        term.set_prompt(auth_user+'@reddit:~/user/'+author+'$ ');
+        term.set_prompt(auth_user+'@johnle.org:~/user/'+author+'$ ');
         term.resume();
       });
       clearTimeout(poll);
@@ -1981,7 +1981,7 @@ $(function() {
               comments.push(comment_url);
               reply_message = line1 + line2 + line3;
               term.echo(reply_message, {raw:true});
-              term.set_prompt(auth_user+'@reddit:~/r/'+subreddit+'/comments$ ');
+              term.set_prompt(auth_user+'@johnle.org:~/r/'+subreddit+'/comments$ ');
             }
           });
           term.resume(); 
@@ -2033,7 +2033,7 @@ $(function() {
               comments.push(comment_url);
               reply_message = line1 + line2 + line3;
               term.echo(reply_message, {raw:true});
-              term.set_prompt(auth_user+'@reddit:~/r/'+subreddit+'/comments$ ');
+              term.set_prompt(auth_user+'@johnle.org:~/r/'+subreddit+'/comments$ ');
             }
           });
           term.resume(); 
@@ -2124,13 +2124,13 @@ $(function() {
             if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
               term.echo("commands: ls, ls [subreddit] [next|previous], view comments [index], view more comments [index], watch [subreddit], search, user, settings", {raw:true});
               term.echo("warning: reddit shell may not work on all mobile devices", {raw:true});
-              term.set_prompt(auth_user+'@reddit:~$ ');
+              term.set_prompt(auth_user+'@johnle.org:~$ ');
               term.echo("authenticated user: <strong>"+auth_user+"</strong>, link karma: <strong>"+link_karma+"</strong>, comment karma: <strong>"+comment_karma+"</strong>, account created: <strong>"+time+"</strong>", {raw:true});
               term.resume();
               $('.clipboard').focus();
             } else {
               greetings(term);
-              term.set_prompt(auth_user+'@reddit:~$ ');
+              term.set_prompt(auth_user+'@johnle.org:~$ ');
               term.echo("authenticated user: <strong>"+auth_user+"</strong>, link karma: <strong>"+link_karma+"</strong>, comment karma: <strong>"+comment_karma+"</strong>, account created: <strong>"+time+"</strong>", {raw:true});
               term.resume();
               $('.clipboard').focus();
@@ -2144,12 +2144,12 @@ $(function() {
         if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
           term.echo("commands: ls, ls [subreddit] [next|previous], view comments [index], view more comments [index], watch [subreddit], search, user, settings", {raw:true});
           term.echo("warning: reddit shell may not work on all mobile devices", {raw:true});
-          term.set_prompt(auth_user+'@reddit:~$ ');
+          term.set_prompt(auth_user+'@johnle.org:~$ ');
           term.resume();
           $('.clipboard').focus();
         } else {
           greetings(term);
-          term.set_prompt(auth_user+'@reddit:~$ ');
+          term.set_prompt(auth_user+'@johnle.org:~$ ');
           term.resume();
           $('.clipboard').focus();
         }
